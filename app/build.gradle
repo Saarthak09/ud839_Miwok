@@ -18,8 +18,13 @@ android {
         }
     }
 }
-
-
+repositories {
+    maven {
+        url 'https://maven.google.com'
+    }
+    jcenter()
+    maven { url 'https://maven.fabric.io/public' }
+}
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])	
     testCompile 'junit:junit:4.12'	
